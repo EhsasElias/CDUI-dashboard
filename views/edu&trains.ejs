@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/styleEN.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <title>DashBoard</title>
+</head>
+
+
+<body class="bg-pink-light">
+
+    <div class="d-flex">
+       <%- include ('nav.ejs') %> 
+        <section class="w-75">
+            
+          <section class="">
+            <div class="bg-white rounded-4 p-5 mx-2">
+                <h1 class="fw-bolder">Education & Training</h1>
+                <span class="link-secondary">Welcome to JobHub!</span><br>
+
+                <table class="table table-borderless my-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <h4>Education</h4>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>Bacaloria in Information Technology</td>
+
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                    role="button"></i>
+                                    <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Deploma In Secertary</td>
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                    role="button"></i>
+                                <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Tofil In English
+                            </td>
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                    role="button"></i>
+                                <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-borderless my-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <h4>Trainings</h4>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>Training In IOM Orginazation</td>
+
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                role="button"></i>
+                                <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Training In SHS Orginazation</td>
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                role="button"></i>
+                                <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>Training In UN Orginazation
+                            </td>
+                            <td class="link-secondary">
+                                <i class="fa fa-plus p-2" data-bs-toggle="modal" href="#exampleModalToggle3"
+                                role="button"></i>
+                                <i class="fa fa-pencil p-2" data-bs-toggle="modal" href="#exampleModalToggle2"
+                                    role="button"></i>
+                                <i class="fa fa-trash-o p-2 text-danger exper" data-bs-toggle="modal"
+                                    href="#exampleModalToggle" role="button"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-body m-auto">
+                                Are you Sure Of Deleting This Item
+                            </div>
+                            <div class="modal-footer m-auto border-top-0">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Cancel</button>
+                                <button class="btn btn-danger" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Delete</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-body m-auto">
+                                <input type="text" placeholder="Education OR Training"
+                                    class="form-control p-3 px-5 rounded-4">
+                            </div>
+                            <div class="modal-footer m-auto border-top-0">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Cancel</button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">Edit</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <form action="add_e&t" method="post" class="modal-content">
+
+                        <div class="modal-body m-auto">
+                            <input type="text" placeholder="Add Education OR Training" name="qual"
+                                class="form-control p-3 px-5 rounded-4">
+                        </div>
+                        <div class="modal-footer m-auto border-top-0">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle3"
+                                data-bs-toggle="modal">Cancel</button>
+                            <button class="btn btn-primary" type="submit" data-bs-target="#exampleModalToggle3"
+                                data-bs-toggle="modal">Add</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+    </section>
+
+        </section>
+
+    </div>
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

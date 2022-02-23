@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/styleEN.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <title>DashBoard</title>
+</head>
+
+<body class="bg-pink-light">
+
+    <div class="d-flex">
+
+        <%- include ('nav.ejs') %>
+
+            <section class="w-75">
+
+                <form action="/profileEdit" method="post" class="w-100">
+                    <div class="bg-white rounded-4 p-5 mx-2">
+                        <h1 class="fw-bolder">Profile</h1>
+                        <span class="link-secondary">Welcome to JobHub!</span><br>
+                        <div class="row">
+                            <div class="input-group mb-3 mt-4 col-lg-12">
+                                <label class="w-100 my-2" for="">Name</label>
+                                <input type="text" class="form-control rounded-pill p-3" name="name"
+                                    placeholder="Add Your Name">
+
+                            </div>
+                        </div>
+                        <div class="input-group mb-3 mt-4 d-flex justify-content-between">
+                            <div class="row w-100 justify-content-between">
+                                <div class="col-lg-6">
+                                    <label class=" my-2" for="">Title</label>
+                                    <input type="text" class="form-control rounded-pill p-3 " name="title"
+                                        placeholder="Ex.Web Designer">
+
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label class=" my-2 " for="">Location</label>
+                                    <input type="text" class="form-control rounded-pill p-3  " name="location"
+                                        placeholder="Ex. Sanaa">
+
+                                </div>
+                            </div>
+                            <div class="input-group mb-3 mt-4 d-flex justify-content-between">
+                                <div class="row w-100 justify-content-between">
+                                    <div class="col-lg-6">
+                                        <form action=""> <label class=" my-2" for="">Email</label>
+                                            <input type="text" class="form-control rounded-pill p-3 " name="email"
+                                                placeholder="ehsas.1998000@gmail.com">
+                                        </form>
+
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label class=" my-2 " for="">Phone</label>
+                                        <input type="text" class="form-control rounded-pill p-3  " name="phone"
+                                            placeholder="+967 777 777 777">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-3 mt-4">
+                                <label class="w-100 my-2" for="">Update your picture</label>
+
+                                <input type="file" class="form-control rounded-4 p-3 py-5 text-center" name="image"
+                                    placeholder="Upload Your Img"
+                                    style="border:1px dotted #ced4da !important;height: 150px;">
+
+                            </div>
+                            <div class="input-group mb-3 mt-4">
+                                <label class="w-100 my-2" for="">About you</label>
+                                <input type="text" class="form-control p-3" name="bio"
+                                    placeholder="Type your info here..." style="height: 150px;border-radius: 20px;">
+
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <a class="btn bg-darkBlue text-light rounded-4 border-0 p-3 px-5 m-auto Download"
+                                href="/files/EhsasCVeng.pdf">Download CV</a>
+                            <input type="submit"
+                                class="btn bg-darkBlue text-light rounded-4 border-0 p-3 px-5 m-auto Download"
+                                href="/files/EhsasCVeng.pdf" value="Save">
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+    </div>
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

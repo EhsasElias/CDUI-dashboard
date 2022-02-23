@@ -1,0 +1,71 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.color-blue{
+    color: #366bc3;
+}
+body{
+    font-family: 'Poppins';
+}
+.rounded-4{
+    border-radius: 1rem;
+}
+.m-auto{
+    margin:5px !important;
+} 
+.dropdown-menu{
+    width: 90vw !important;
+}
+.signinSignup{
+    display: none !important;
+}
+.bg-white{
+    background-color: #fff !important;
+
+    transition: 1s;
+}
+.bg-lightBlue{
+    background-color: #e3f0f9;
+}
+.bg-darkBlue{
+    background-color: #102845;
+}
+.fs-big{
+    font-size: 4rem !important;
+}
+.topic{
+    overflow: hidden !important;
+}
+.vh-150{
+    height: 150vh;
+}
+.rotate{
+ 
+    position: absolute;
+    right: -20%;
+    top: 0;
+    transform: rotate(390deg);
+    height: 100%;
+    border-bottom-left-radius: 15rem;
+    
+}
+@media only screen and (min-width: 800px){
+
+    .container-fluid{
+        width: 85%;
+    } 
+    .m-auto{
+        margin: auto !important;
+    }
+    .dropdown-menu{
+        width: 100% !important;
+    }
+   
+    .signinSignup{
+        display: flex !important;
+    }
+}

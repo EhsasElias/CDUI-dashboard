@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styleEN.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <title>DashBoard</title>
+</head>
+
+<body class="bg-pink-light">
+
+  <div class="d-flex">
+    <%- include ('nav.ejs') %> 
+   
+    <section class="">
+      <form class=" signin  d-flex justify-content-end m-1 align-items-start">
+
+        
+      </form>
+      <section class="w-100">
+        <div class="bg-white rounded-4 p-5 mx-2">
+          <h1 class="fw-bolder">Dashboard</h1>
+          <span class="link-secondary">Welcome to JobHub!</span><br>
+          <div class="row justify-content-evenly">
+            <button type="button" class="btn col-md-5 d-flex  rounded-4 align-items-center my-2"
+              style="background-color: #e6f0f9;">
+              <div class="fa  fa-file-text-o  fs-2 bg-white rounded-3 p-3"></div>
+              <div class="mx-auto">
+                <h4 class="fw-bolder">13</h4>
+                <p class="link-secondary">Job application</p>
+              </div>
+            </button>
+            <button type="button" class="btn  col-md-5  d-flex  rounded-4 align-items-center my-2"
+              style="background-color: #dedede;">
+              <div class="fa fa-user   fs-2 bg-white rounded-3 p-3"></div>
+
+              <div class="mx-auto">
+                <h4 class="fw-bolder">14</h4>
+                <p class="link-secondary">Profile visits</p>
+              </div>
+            </button>
+            <button type="button" class="btn  col-md-5  d-flex  rounded-4 align-items-center my-2"
+              style="background-color: #FFF8EC;">
+              <div class="fa fa-envelope-o  fs-2 bg-white rounded-3 p-3"></div>
+
+              <div class="mx-auto">
+                <h4 class="fw-bolder">155</h4>
+                <p class="link-secondary">Unread messages/p>
+              </div>
+            </button>
+            <button type="button" class="btn  col-md-5  d-flex  rounded-4 align-items-center my-2"
+              style="background-color: #fff0d9;">
+              <div class="fa  fa-bell-o  fs-2 bg-white rounded-3 p-3"></div>
+              <div class="mx-auto">
+                <h4 class="fw-bolder">103</h4>
+                <p class="link-secondary">Notifications</p>
+              </div>
+            </button>
+          </div>
+          <table class="table table-borderless my-5">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <h4>Recent Notifications</h4>
+                </th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td><i class="fa fa-user"></i> <span class="text-primary">enaselias</span> viewed your profile.</td>
+
+                <td class="link-secondary">3h ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-envelope-o"></i><span class="text-primary"> enaselias</span>sent you a message.</td>
+                <td class="link-secondary">20m ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-user"></i><span class="text-primary"> enaselias</span> viewed your profile.</td>
+                <td class="link-secondary">2m ago</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-borderless my-5">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <h4>Recent Messages</h4>
+                </th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td><i class="fa fa-user"></i> <span class="text-primary">enaselias</span> viewed your profile.</td>
+
+                <td class="link-secondary">3h ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-envelope-o"></i><span class="text-primary"> enaselias</span>sent you a message.</td>
+                <td class="link-secondary">20m ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-user"></i><span class="text-primary"> enaselias</span> viewed your profile.</td>
+                <td class="link-secondary">2m ago</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-borderless my-5">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <h4>Recent Jobs</h4>
+                </th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+                <td><i class="fa fa-user"></i> <span class="text-primary">enaselias</span>
+                  Human Resources Coordinator</td>
+
+                <td class="link-secondary">3h ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-envelope-o"></i><span class="text-primary"> enaselias</span>
+                  Human Resources Coordinator</td>
+                <td class="link-secondary">20m ago</td>
+              </tr>
+              <tr>
+
+                <td><i class="fa fa-user"></i><span class="text-primary"> enaselias</span>
+                  Human Resources Coordinator</td>
+                <td class="link-secondary">2m ago</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </section>
+
+  </div>
+
+
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

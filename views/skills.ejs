@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/styleEN.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <title>DashBoard</title>
+</head>
+
+<body class="bg-pink-light">
+
+    <div class="d-flex">
+       <%- include ('nav.ejs') %> 
+        
+        <section class="w-75">
+            
+            <section class="">
+                <div class="bg-white rounded-4 p-5 mx-2">
+                    <h1 class="fw-bolder">Skills</h1>
+                    <span class="link-secondary">Welcome to JobHub!</span><br>
+
+                    <form action="/add_skill" method="post">
+                        <h4 class="mt-4">
+                            Sugg...
+                        </h4>
+                        <div class="mt-4"> <button type="button" class="btn bg-lightBlue rounded-pill m-2">Work from home<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Part-time<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Administration<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Finance<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">IT<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Engineering<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Manufacturing<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                            <button type="button" class="btn bg-lightBlue rounded-pill m-2">Sales<i
+                                    class="fa fa-trash-o px-2"></i></button>
+                        </div>
+
+
+                        <div class="input-group mb-3 mt-4">
+                            <input type="text" class="form-control rounded-pill p-3" placeholder="Skill" id="skill" name="skill">
+                            <button class="btn bg-lightBlue rounded-pill p-3 a-skill" type="submit">Add Skill</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </section>
+
+        </section>
+
+    </div>
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
